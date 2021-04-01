@@ -33,5 +33,5 @@ jobs:
       - name: install surge
         run: npm install -g surge
       - name: run surge
-        run: surge ./ qulzamapp.surge.sh
+        run: surge ./ qulzamapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
